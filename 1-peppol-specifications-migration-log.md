@@ -161,4 +161,43 @@
 
 ## Phase 3 : Deprecated API Cleanup
 
-- [TBD]
+[Deprecation cleanup verification log](https://gist.github.com/harsha-amarasiri/a17a3662ebc7dc442f98b9b50caadf41/raw/9d9efbbd166670fa0d5b1896ebe82771b44d2a56/deprecate-api-cleanup-verification.log)
+
+- Deprecated JAXWS Reference
+
+  <img width="575" height="110" alt="image" src="https://github.com/user-attachments/assets/ea2a4ca4-6f26-49bc-9ca5-579295094e25" />
+
+  <img width="751" height="128" alt="image" src="https://github.com/user-attachments/assets/d69371c4-4c8f-4d7f-9591-519478684481" />
+
+- `xsltCompiler.setURIResolver` is Deprecated in `peppol-schematron`
+  <img width="1687" height="78" alt="image" src="https://github.com/user-attachments/assets/385bfed6-5a3f-46d9-b739-5329180c8f07" />
+  - Added ClasspathResourceResolver and ClasspathResourceResolverTests to the `peppol-schematron` module
+
+## Phase 4: Verification
+Compiled artifact verifictions
+
+
+
+Class counts for `v2.5.0`
+```bash
+/home/harsha/.m2/repository/network/oxalis/peppol/peppol-bdx/2.5.0/peppol-bdx-2.5.0.jar: 74 classes
+/home/harsha/.m2/repository/network/oxalis/peppol/peppol-busdox/2.5.0/peppol-busdox-2.5.0.jar: 94 classes
+/home/harsha/.m2/repository/network/oxalis/peppol/peppol-sbdh/2.5.0/peppol-sbdh-2.5.0.jar: 16 classes
+/home/harsha/.m2/repository/network/oxalis/peppol/peppol-schematron/2.5.0/peppol-schematron-2.5.0.jar: 56 classes
+/home/harsha/.m2/repository/network/oxalis/peppol/peppol-ubl21/2.5.0/peppol-ubl21-2.5.0.jar: 1600 classes
+``` 
+Class counts for `v2.5.1-SNAPSHOT`
+```
+peppol-bdx/target/peppol-bdx-2.5.1-SNAPSHOT.jar: 74 classes
+peppol-busdox/target/peppol-busdox-2.5.1-SNAPSHOT.jar: 94 classes
+peppol-sbdh/target/peppol-sbdh-2.5.1-SNAPSHOT.jar: 16 classes
+peppol-schematron/target/peppol-schematron-2.5.1-SNAPSHOT.jar: 57 classes <==  "ClasspathResourceResolver" added 
+peppol-ubl21/target/peppol-ubl21-2.5.1-SNAPSHOT.jar: 1600 classes
+```
+
+
+- Contents within primary classes like SBD / SBDH was manually checked 
+
+
+
+
